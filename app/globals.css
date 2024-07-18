@@ -10,7 +10,18 @@
 --Rose-100: hsl(13, 31%, 94%);
 --Rose-300: hsl(14, 25%, 72%);
 --Rose-400: hsl(7, 20%, 60%);
---Rose-500: hsl(12, 20%, 44%);
+--Rose-500: hsl(6, 20%, 44%);
 --Rose-900: hsl(14, 65%, 9%);
 }
 
+.bg-img{
+  width: 350px;
+  height: 300px;
+  background-image: url('/images/illustration-empty-cart.svg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-color: var(--Rose-50);
+  box-shadow:3px 3px 2px 1px var(--Rose-300);
+  border-radius: 12px;
+}
