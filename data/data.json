@@ -1,6 +1,7 @@
 [
     {
        "id":1,
+       "quantity":1,
         "image": {
             "thumbnail": "/images/image-waffle-thumbnail.jpg",
             "mobile": "/images/image-waffle-mobile.jpg",
@@ -13,6 +14,7 @@
     },
     {
         "id":2,
+        "quantity":1,
         "image": {
             "thumbnail": "/images/image-creme-brulee-thumbnail.jpg",
             "mobile": "/images/image-creme-brulee-mobile.jpg",
@@ -25,6 +27,7 @@
      },
      {
         "id":3,
+        "quantity":1,
         "image": {
             "thumbnail": "/images/image-macaron-thumbnail.jpg",
             "mobile": "/images/image-macaron-mobile.jpg",
@@ -37,6 +40,7 @@
      },
      {
         "id":4,
+        "quantity":1,
         "image": {
             "thumbnail": "/images/image-tiramisu-thumbnail.jpg",
             "mobile": "/images/image-tiramisu-mobile.jpg",
@@ -49,6 +53,7 @@
      },
      {
         "id":5,
+        "quantity":1,
         "image": {
             "thumbnail": "/images/image-baklava-thumbnail.jpg",
             "mobile": "/images/image-baklava-mobile.jpg",
@@ -61,6 +66,7 @@
      },
      {
         "id":6,
+        "quantity":1,
         "image": {
             "thumbnail": "/images/image-meringue-thumbnail.jpg",
             "mobile": "/images/image-meringue-mobile.jpg",
@@ -73,6 +79,7 @@
      },
      {
         "id":7,
+        "quantity":1,
         "image": {
             "thumbnail": "/images/image-cake-thumbnail.jpg",
             "mobile": "/images/image-cake-mobile.jpg",
@@ -85,6 +92,7 @@
      },
      {
         "id":8,
+        "quantity":1,
         "image": {
             "thumbnail": "/images/image-brownie-thumbnail.jpg",
             "mobile": "/images/image-brownie-mobile.jpg",
@@ -97,6 +105,7 @@
      },
      {
         "id":9,
+        "quantity":1,
         "image": {
             "thumbnail": "/images/image-panna-cotta-thumbnail.jpg",
             "mobile": "/images/image-panna-cotta-mobile.jpg",
