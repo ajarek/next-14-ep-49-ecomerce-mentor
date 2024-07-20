@@ -19,6 +19,7 @@ type ItemState = {
   removeAll: () => void
   increment: (id: number) => void
   decrement: (id: number) => void
+  removeAllFromCart: () => void
 }
 
 export const useCartStore = create<ItemState>()(
@@ -35,6 +36,8 @@ export const useCartStore = create<ItemState>()(
         set((state) => ({
           items: state.items.filter((item) => item.id !== id),
         })),
+
+        removeAllFromCart:()=>set({items:[]}),
 
       total: () =>
         get().items.reduce((acc, item) => acc + item.price * item.quantity, 0),

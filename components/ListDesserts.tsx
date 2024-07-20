@@ -9,6 +9,7 @@ const ListDesserts = () => {
   const {addItemToCart,  items}= useCartStore()
   
   const handleCart =(item:Cart)=>{
+    
     if(items.some((i)=>i.id===item.id)) return
     const newItem = {...item, quantity: item.quantity}
     addItemToCart(newItem)

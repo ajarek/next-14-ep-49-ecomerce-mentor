@@ -25,3 +25,9 @@
   box-shadow:3px 3px 2px 1px var(--Rose-300);
   border-radius: 12px;
 }
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    background: var(--Rose-300);
+    }
