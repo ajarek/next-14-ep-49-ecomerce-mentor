@@ -26,40 +26,38 @@ export default function Home() {
             <h1 className='text-2xl font-bold'>Order Confirmed</h1>
             <p>We hope you enjoy your food!</p>
             <div className='max-h-[200px] overflow-y-auto scrollbar  p-2'>
+              {items.length > 0 &&
+                items.map((item) => (
+                  <div
+                    key={item.id}
+                    className='flex  items-center justify-start  border-b-2 border-gray-300 gap-2 mt-4 '
+                  >
+                    <Image
+                      src={item.image.thumbnail}
+                      alt={item.name}
+                      width={50}
+                      height={50}
+                    />
 
-           
-            {items.length > 0 &&
-              items.map((item) => (
-                <div
-                  key={item.id}
-                  className='flex  items-center justify-start  border-b-2 border-gray-300 gap-2 mt-4 '
-                >
-                  <Image
-                    src={item.image.thumbnail}
-                    alt={item.name}
-                    width={50}
-                    height={50}
-                  />
-
-                  <div className='w-full flex flex-col'>
-                    <div>{item.name}</div>
-                    <div className='w-full flex justify-between items-center '>
-                      <div className='flex items-center  gap-4'>
-                        <div className='flex items-center justify-center  w-[30px] h-[30px] rounded-full '>
-                          {item.quantity}x
+                    <div className='w-full flex flex-col'>
+                      <div>{item.name}</div>
+                      <div className='w-full flex justify-between items-center '>
+                        <div className='flex items-center  gap-4'>
+                          <div className='flex items-center justify-center  w-[30px] h-[30px] rounded-full '>
+                            {item.quantity}x
+                          </div>
+                          <div>@${item.price.toFixed(2)}</div>
                         </div>
-                        <div>@${item.price.toFixed(2)}</div>
+                        <div> ${(item.price * item.quantity).toFixed(2)}</div>
                       </div>
-                      <div> ${(item.price * item.quantity).toFixed(2)}</div>
                     </div>
                   </div>
-                </div>
-              ))}
-               </div>
-              <div className='flex justify-between items-center mt-4'>
-               <div>Order Total</div>
+                ))}
+            </div>
+            <div className='flex justify-between items-center mt-4'>
+              <div>Order Total</div>
               <div className='font-bold text-2xl'>${total().toFixed(2)}</div>
-              </div>
+            </div>
             <button
               onClick={() => {
                 setModal(false)
