@@ -27,6 +27,7 @@
 }
 .scrollbar::-webkit-scrollbar {
   width: 5px;
+  border-radius: 2px;
   }
   .scrollbar::-webkit-scrollbar-track {
     background: var(--Rose-300);

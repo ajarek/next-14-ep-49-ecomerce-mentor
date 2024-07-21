@@ -2,8 +2,7 @@
 import data from '@/data/data.json'
 import Image from 'next/image'
 import {useCartStore} from '@/store/cartStore'
-import type {Cart} from '@/store/cartStore'
-import { useState } from 'react'
+
 
 const ListDesserts = () => {
   const {addItemToCart,  items}= useCartStore()
