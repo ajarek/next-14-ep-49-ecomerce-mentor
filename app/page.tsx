@@ -18,7 +18,7 @@ export default function Home() {
   const [modal, setModal] = useState(false)
 
   return (
-    <main className='w full flex flex-col justify-center items-center bg-[var(--Rose-100)] min-h-screen p-12'>
+    <main className='w full flex flex-col justify-center items-center bg-[var(--Rose-100)] min-h-screen p-12 max-lg:px-4'>
       {modal && (
         <div className='fixed top-0 left-0 w-full h-full bg-black/50 z-10 flex justify-center items-center'>
           <div className='w-[350px] h-[450px] bg-[var(--Rose-100)] justify-self-end shadow-[2px_2px_1px_1px_var(--Rose-300)] p-4 rounded-[12px]'>
@@ -72,13 +72,13 @@ export default function Home() {
           </div>
         </div>
       )}
-      <div className='w-full grid grid-cols-[3fr_1fr] gap-4   '>
+      <div className='w-full grid grid-cols-[3fr_1fr] gap-4 max-lg:grid-cols-subgrid  '>
         <div>
           <h1 className='text-3xl font-bold mb-6'>Desserts</h1>
           <ListDesserts />
         </div>
         {items.length > 0 ? (
-          <div className='w-[350px] h-[400px] justify-self-end shadow-[3px_3px_2px_1px_var(--Rose-300)] p-4 rounded-[12px]'>
+          <div className='w-[350px] h-[400px] max-lg:justify-self-center justify-self-end shadow-[3px_3px_2px_1px_var(--Rose-300)] p-4 rounded-[12px]'>
             <h2 className='text-2xl font-bold text-[var(--Rose-500)] '>
               Your Cart <span>({items.length})</span>
             </h2>
@@ -93,7 +93,7 @@ export default function Home() {
                     <div className='flex items-center gap-4'>
                       <div>${item.price.toFixed(2)}</div>
 
-                      <div className='flex items-center'>
+                      <div className='flex items-center gap-1'>
                         <button onClick={() => decrement(item.id)}>➖</button>
                         <div className='flex items-center justify-center  w-[30px] h-[30px] rounded-full border-2 border-gray-500'>
                           {item.quantity}

@@ -14,7 +14,7 @@ const ListDesserts = () => {
     addItemToCart(newItem)
   }
   return (
-    <div className='grid grid-cols-3 gap-4'>
+    <div className='grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4'>
       {data.map((item) => (
         <div
           key={item.id}
@@ -26,7 +26,7 @@ const ListDesserts = () => {
             alt={item.name}
             width={300}
             height={300}
-            className='relative'
+            className='w-full relative'
           />
            <button className='flex gap-2 items-center w-36 p-2 bg-[var(--Rose-50)] rounded-full  border-2 border-[var(--Rose-500)] absolute -bottom-4 right-[50%] translate-x-[50%] hover:font-bold transition-all' onClick={()=>handleCart(item)}>
              <Image src='/images/icon-add-to-cart.svg' alt='delete' width={21} height={20} />
